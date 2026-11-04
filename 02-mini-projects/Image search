@@ -1,0 +1,8 @@
+function imageSearch(images, term) {
+
+  const lowerTerm = term.toLowerCase();
+  
+
+  return images.filter(image => image.toLowerCase().includes(lowerTerm));
+}
+imageSearch(["dog.png", "cat.jpg", "parrot.jpeg", "catnip.png"], "cat")
